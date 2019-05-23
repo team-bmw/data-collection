@@ -12,7 +12,7 @@ const client = new Twitter({
     access_token_secret: 'cokPp4Ss1xkxLo8YmxHjxbeRz2JJwIbZDy54nJrCMHCtk'
 });
 
-client.get('tweets/search/30day/dev', { query: 'snow', result_type: 'recent' }, (error, tweets, response) => {
+client.get('favorites/list', { query: 'snow', result_type: 'recent' }, (error, tweets, response) => {
 
     console.log(tweets)
     //const tweet = JSON.stringify(tweets.statuses[0]);
